@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RevoU Project</title>
+    <link rel="stylesheet" href="folder css\style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-icon"></div>
+        <nav>
+            <a href="#section-home">Home</a>
+            <a href="#section-our-profile">Our Profile</a>
+            <a href="#section-portofolio">Portfolio</a>
+            <a href="#section-message-us">Message us</a>
+        </nav>
+    </header>
+    <hr>
+
+    <!-- Section Home -->
+    <section id="section-home">
+        <header>
+            <h1>Welcome to Our Website</h1>
+        </header>
+        <article>
+            <p>Selamat datang di Website latihan pertama saya, tempat di mana kreativitas bertemu inovasi! Kami berkomitmen untuk menyediakan konten dan layanan yang tidak hanya menginspirasi tetapi juga membantu Anda menemukan solusi yang tepat untuk kebutuhan Anda. Di sini, Anda akan menemukan berbagai informasi, produk, dan layanan berkualitas yang dirancang untuk meningkatkan pengalaman Anda. Kami percaya bahwa setiap kunjungan Anda ke situs ini adalah langkah menuju penemuan baru yang menyenangkan. Mari jelajahi bersama dan temukan apa yang bisa kami tawarkan untuk mewujudkan visi dan impian Anda!</p>
+        </article>
+
+        <!-- Image Slider -->
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <div class="photo-banner1" alt="banner1"></div>
+                </div>
+                <div class="slide">
+                    <div class="photo-banner2" alt="banner2"></div>
+                </div>
+                <div class="slide">
+                    <div class="photo-banner3" alt="banner3"></div>
+                </div>
+            </div>
+            <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+            <a class="next" onclick="moveSlide(1)">&#10095;</a>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Section Our Profile -->
+    <section id="section-our-profile">
+        <header>
+            <h1>Our Profile</h1>
+        </header>
+        <div class="profile-icon-container">
+            <div>
+                <div class="profile-icon1"></div>
+                <h4>Profile 1</h4>
+            </div>
+            <div>
+                <div class="profile-icon2"></div>
+                <h4>Profile 2</h4>
+            </div>
+            <div>
+                <div class="profile-icon3"></div>
+                <h4>Profile 3</h4>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Section Portfolio -->
+    <section id="section-portofolio">
+        <header>
+            <h1>Portfolio</h1>
+        </header>
+        <div class="container1">
+            <h2>Hello, I'm Galih Dwi Ramdani</h2>
+            <p class="Role">Web Developer | Front end | Freelancer</p>
+        </div>
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section Interactive Projects -->
+<section id="section-projects">
+    <header>
+        <h1>My Projects</h1>
+    </header>
+    <div class="project-cards">
+        <div class="card">
+            <div class="card-content">
+                <h3>Project 1</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit cum eum molestiae eius distinctio fuga est! Tempore, praesentium reprehenderit dicta voluptates delectus quisquam fugit veniam a, accusantium accusamus pariatur consectetur.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3>Project 2</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint dolore labore magnam! Laudantium magni minus rerum delectus beatae fuga iusto cumque, voluptate excepturi sint reprehenderit quia! Est, cumque. Deleniti, necessitatibus.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3>Project 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nihil qui ut praesentium ipsum accusamus inventore exercitationem, nesciunt nemo possimus maiores culpa doloremque, magnam fuga, recusandae ullam aliquam numquam consectetur.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Email: galihdwiramdani8@gmail.com</p>
+            </div>
+        </section>
+    </section>
+
+    <hr>
+
+    <!-- Section Message Us -->
+    <section id="section-message-us">
+        <header>
+            <h1>Message Us</h1>
+        </header>
+        <div class="contact-container">
+            <div class="form-container">
+                <h2>Form Data Diri</h2>
+                <form id="dataForm">
+                    <div class="form-group">
+                        <label for="name">Nama:</label>
+                        <input placeholder="Nama" type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Tanggal Lahir:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Jenis Kelamin:</label>
+                        <div class="gender-inputs">
+                            <input type="radio" id="male" name="gender" value="Laki-laki">
+                            <label for="male">Laki-laki</label>
+                            <input type="radio" id="female" name="gender" value="Perempuan">
+                            <label for="female">Perempuan</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan:</label>
+                        <textarea placeholder="Pesan" id="message" name="message" rows="4" cols="30"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="result-container">
+                <h2>Hasil Form</h2>
+                <div id="resultBox"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Galih Dwi Ramdani. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="folder javascript\script.js"></script>
+</body>
+</html>
